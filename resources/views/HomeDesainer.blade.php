@@ -8,33 +8,9 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
 <body>
-	<div class="row">
-		<div class="col-lg-12">
-			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-			  <span class="navbar-brand mb-0 h1">YukCetak!</span>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    	<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			    <ul class="navbar-nav mr-auto">
-			      	<li class="nav-item active">
-			        	<a class="nav-link" href="#">Katagori<span class="sr-only"></span></a>
-			      	</li>
-			    </ul>
-			    <ul class="navbar-nav ml-auto">
-			    	<li class="nav-item">
-			        	<a class="nav-link" href="#">Daftar</a>
-			      	</li>
-			      	<li class="nav-item" style="padding-right: 80px">
-			        	<a class="nav-link" href="{{ url('/login') }}">Masuk</a>
-			      	</li>
-			    </ul>
-			  </div>
-			</nav>
-		</div>
-	</div>
 
-	
+	@include('partials.navbar')
+
 	  <section class="container-fluid mt-2">
 	  	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
@@ -96,7 +72,7 @@
 			<div class="col-md-9">
 				<div class="row">
 					<div class="col-md-3 pl-1">
-						<img class="img-fluid" src="https://via.placeholder.com/300x200" alt="Third slide">
+						<a href="{{ asset('/percetakan/show') }}"><img class="img-fluid" src="https://via.placeholder.com/300x200" alt="Third slide"></a>
 					</div>
 					<div class="col-md-3 pl-1">
 						<img class="img-fluid" src="https://via.placeholder.com/300x200" alt="Third slide">

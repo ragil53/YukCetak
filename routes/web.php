@@ -26,3 +26,7 @@ Route::get('/signUp', function(){
 Route::get('/homeDesainer', function(){
 	return view('homeDesainer');
 });
+
+Route::get('/percetakan/show', function(){
+	return view('Percetakan.show');
+});
